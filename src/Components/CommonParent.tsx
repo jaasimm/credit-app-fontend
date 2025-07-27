@@ -19,7 +19,7 @@ const CommonParent: React.FC = () => {
 
   const fetchLoans = async () => {
     try {
-      const res = await axios.get('http://localhost:3000/api/loans');
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/loans`);
       setLoans(res.data);
     } catch (error) {
       console.error('Failed to fetch loans:', error);

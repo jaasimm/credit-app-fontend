@@ -22,7 +22,7 @@ const AppliedLoans: React.FC = () => {
 useEffect(() => {
   const fetchLoans = async () => {
     try {
-      const res = await axios.get('http://localhost:3000/api/loans');
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/loans`);
       // Check if data is an array before setting
       if (Array.isArray(res.data)) {
         setLoans(res.data);

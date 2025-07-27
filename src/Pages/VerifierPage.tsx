@@ -1,5 +1,5 @@
 import React from 'react';
-import LoanVerificationTable from '../components/LoanVerificationTable';
+import LoanVerificationTable from '../Components/LoanVerificationTable';
 import Dashboard from '../Components/Loans';
 
 const VerifierPage: React.FC = () => {

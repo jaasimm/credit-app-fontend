@@ -1,4 +1,4 @@
-import React from 'react'
+ import React from 'react'
 import AdminLoans from '../Components/AdminLoans'
 import AdminVerifiedLoans from '../Components/AdminVerification'
 

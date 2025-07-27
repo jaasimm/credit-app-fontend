@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LoanFormModal from '../components/LoanFormModal';
+import LoanFormModal from '../Components/LoanFormModal';
 import ActionTabs from '../Components/ActionTabs';
 import SearchBar from '../Components/Searchbar';
 import AppliedLoans from '../Components/UserApplied';

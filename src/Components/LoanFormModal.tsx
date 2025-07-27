@@ -25,7 +25,7 @@ const LoanFormModal: React.FC<Props> = ({ onClose }) => {
   const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
   try {
-    const response = await axios.post('http://localhost:3000/api/loans', form);
+    const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/loans`, form);
     console.log('Loan saved:', response.data);
     alert('Loan submitted successfully');
     onClose();

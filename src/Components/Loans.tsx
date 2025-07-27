@@ -8,7 +8,7 @@ import { FcAcceptDatabase } from "react-icons/fc";
 interface StatCardProps {
   label: string;
   value: string;
-  icon: string;
+  icon: React.ReactNode;
 }
 
 const styles = {

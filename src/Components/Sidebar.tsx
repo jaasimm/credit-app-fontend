@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FaTachometerAlt, FaUserFriends, FaMoneyCheckAlt, FaReceipt, FaUserCircle } from 'react-icons/fa';
 
 const Sidebar = () => {

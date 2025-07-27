@@ -5,10 +5,11 @@ import { BsFillPersonCheckFill } from "react-icons/bs";
 import { BsFillPersonDashFill } from "react-icons/bs";
 import { MdSavings } from "react-icons/md";
 import { FcAcceptDatabase } from "react-icons/fc";
+
 interface StatCardProps {
   label: string;
   value: string;
-  icon: string;
+  icon: React.ReactNode;
 }
 
 const styles = {

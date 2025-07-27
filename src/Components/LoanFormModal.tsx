@@ -24,6 +24,7 @@ const LoanFormModal: React.FC<Props> = ({ onClose }) => {
 
   const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
+  setIsSubmitting(true); // Set submitting to true
   try {
     const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/loans`, form);
     console.log('Loan saved:', response.data);
@@ -31,6 +32,9 @@ const LoanFormModal: React.FC<Props> = ({ onClose }) => {
     onClose();
   } catch (error) {
     console.error('Error submitting loan:', error);
+  }
+  finally {
+    setIsSubmitting(false); // ✅ Reset submitting
   }
 };
 

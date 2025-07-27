@@ -6,7 +6,7 @@ import Userpage from './Pages/Userpage';
 import VerifierPage from './Pages/VerifierPage';
 import Admin from './Pages/Admin';
 import Sidebar from './Components/Sidebar';
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 
 function App() {
   const { role } = useRole();
